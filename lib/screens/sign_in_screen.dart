@@ -41,7 +41,7 @@ class SignInScreenState extends State<SignInScreen> {
                 child: Container(
                   padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.8), // Latar belakang semi transparan
+                    color: Colors.white.withValues(alpha: 0.8), // Latar belakang semi transparan
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Form( 
@@ -50,6 +50,7 @@ class SignInScreenState extends State<SignInScreen> {
                       mainAxisSize: MainAxisSize.min,
                       children: [ 
                         TextFormField( 
+                          style: const TextStyle(color: Colors.black),
                           controller: _emailController, 
                           keyboardType: TextInputType.emailAddress, 
                           decoration: const InputDecoration( 
@@ -68,6 +69,7 @@ class SignInScreenState extends State<SignInScreen> {
                         ), 
                         const SizedBox(height: 16.0), 
                         TextFormField( 
+                          style: TextStyle(color: Colors.black),
                           controller: _passwordController, 
                           obscureText: !_isPasswordVisible, 
                           decoration: InputDecoration( 

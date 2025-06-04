@@ -41,6 +41,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Logout'),
+          titleTextStyle: TextStyle(color: Colors.black),
+          contentTextStyle: TextStyle(color: Colors.black),
           content: const Text('Apakah Anda yakin ingin keluar dari akun?'),
           actions: [
             TextButton(
@@ -85,28 +87,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            // Top section with edit button
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    width: 40,
-                    height: 40,
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: const Icon(
-                      Icons.edit,
-                      color: Colors.black54,
-                      size: 20,
-                    ),
-                  ),
-                ],
-              ),
-            ),
 
             const Spacer(flex: 2),
 

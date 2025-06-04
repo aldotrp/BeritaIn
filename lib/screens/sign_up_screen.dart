@@ -75,6 +75,7 @@ class SignUpScreenState extends State<SignUpScreen> {
                       children: [
                         const SizedBox(height: 16.0),
                         TextFormField(
+                          style: TextStyle(color: Colors.black),
                           controller: _fullNameController,
                           textCapitalization: TextCapitalization.words,
                           decoration: const InputDecoration(
@@ -91,6 +92,7 @@ class SignUpScreenState extends State<SignUpScreen> {
                         ),
                         const SizedBox(height: 16.0),
                         TextFormField(
+                          style: TextStyle(color: Colors.black),
                           controller: _emailController,
                           keyboardType: TextInputType.emailAddress,
                           decoration: const InputDecoration(
@@ -109,6 +111,7 @@ class SignUpScreenState extends State<SignUpScreen> {
                         ),
                         const SizedBox(height: 16.0),
                         TextFormField(
+                          style: TextStyle(color: Colors.black),
                           controller: _passwordController,
                           decoration: InputDecoration(
                             labelText: 'Password',
@@ -140,6 +143,7 @@ class SignUpScreenState extends State<SignUpScreen> {
                         ),
                         const SizedBox(height: 16.0),
                         TextFormField(
+                          style: TextStyle(color: Colors.black),
                           controller: _confirmPasswordController,
                           decoration: InputDecoration(
                             labelText: 'Confirm Password',
