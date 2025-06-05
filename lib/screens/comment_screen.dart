@@ -201,6 +201,7 @@ class _CommentScreenState extends State<CommentScreen> {
                 children: [
                   TextField(
                     controller: _nameController,
+                    style: TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       hintText: 'Nama Anda',
                       prefixIcon: const Icon(Icons.person),
@@ -221,6 +222,7 @@ class _CommentScreenState extends State<CommentScreen> {
                       Expanded(
                         child: TextField(
                           controller: _commentController,
+                          style: TextStyle(color: Colors.black),
                           maxLines: null,
                           minLines: 1,
                           maxLength: 500,

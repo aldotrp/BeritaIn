@@ -82,6 +82,8 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Hapus Favorit'),
+          titleTextStyle: const TextStyle(color: Colors.black),
+          contentTextStyle: const TextStyle(color: Colors.black),
           content: Text('Apakah Anda yakin ingin menghapus "$category" dari favorit?'),
           actions: [
             TextButton(
@@ -140,6 +142,8 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                     return AlertDialog(
                       title: const Text('Hapus Semua Favorit'),
                       content: const Text('Apakah Anda yakin ingin menghapus semua favorit?'),
+                      titleTextStyle: const TextStyle(color: Colors.black),
+                      contentTextStyle: const TextStyle(color: Colors.black),
                       actions: [
                         TextButton(
                           onPressed: () => Navigator.of(context).pop(),
@@ -274,7 +278,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                                       // Deskripsi
                                       Text(
                                         favorite['description'],
-                                        style: const TextStyle(fontSize: 14),
+                                        style: const TextStyle(fontSize: 14,color: Colors.black),
                                         maxLines: 2,
                                         overflow: TextOverflow.ellipsis,
                                       ),
@@ -284,7 +288,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                                         formattedDate,
                                         style: const TextStyle(
                                           fontSize: 12,
-                                          color: Colors.grey,
+                                          color: Colors.black,
                                         ),
                                       ),
                                     ],
